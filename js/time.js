@@ -18,36 +18,36 @@ document.addEventListener('DOMContentLoaded', function() {
         return nd;
     }
 
-    // Append date to DOM
-    var d = calcTime('Honolulu', '-10.0');
+    function loadDate() {
+        // Append date to DOM
+        var d = calcTime('Honolulu', '-10.0');
 
-    var hr = d.getHours();
-    var min = d.getMinutes();
-    var sec = d.getSeconds();
-    if (min < 10) {
-        min = "0" + min;
-    }
-    if (sec < 10) {
-        sec = "0" + sec;
-    }
-    var ampm = "am";
-    if( hr > 12 ) {
-        hr -= 12;
-        ampm = "pm";
-    }
-    var date = d.getDate();
-    var x = document.getElementById("time");
-    x.innerHTML = hr + ":" + min + " " + ampm.toUpperCase();
-
-
-    // Refresh time
-    setInterval(function() {
-
+        var hr = d.getHours();
+        var min = d.getMinutes();
+        var sec = d.getSeconds();
+        if (min < 10) {
+            min = "0" + min;
+        }
+        if (sec < 10) {
+            sec = "0" + sec;
+        }
+        var ampm = "am";
+        if( hr > 12 ) {
+            hr -= 12;
+            ampm = "pm";
+        }
+        var date = d.getDate();
         var x = document.getElementById("time");
         x.innerHTML = hr + ":" + min + " " + ampm.toUpperCase();
 
         console.log(hr + ":" + min + ampm);
-    }, 1000);
+    }
+
+    loadDate();
+
+
+    // Refresh time
+    setInterval(function() { loadDate() }, 1000);
 
 
 }, false);
