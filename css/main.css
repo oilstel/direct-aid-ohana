@@ -9,7 +9,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(6, 6, 72);
+    background: rgb(5, 5, 5);
 }
 main {
     margin: auto;
@@ -17,8 +17,9 @@ main {
     text-align: center;
 }
 img {
-    max-width: 200px;
+    max-width: 500px;
     margin-bottom: 20px;
+    border-radius: 100%;
 }
 /* #maunaloa {
     background-image: url('https://www.esrl.noaa.gov/gmd/webdata/mlo/webcam/gatecam.jpg');
