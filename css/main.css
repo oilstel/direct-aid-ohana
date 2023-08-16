@@ -71,12 +71,12 @@ main {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 #donation-link a {
     font-family: Arial, Helvetica, sans-serif;
-    padding: 5px;
-    border-radius: 3px;
+    padding: 5px 10px;
+    border-radius: 8px;
     border: 1px solid #000;
     text-decoration: none;
     max-width: max-content;
@@ -92,18 +92,24 @@ a {
 #donation-link {
     margin-top: 30px;
 }
-#support {
+button#support {
     font-family: Arial, Helvetica, sans-serif;
     padding: 5px;
     border-radius: 3px;
     border: 1px solid #000;
     text-decoration: none;
     display: block;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #ededed;
+    margin-bottom: 100px;
 }
-#support:hover {
+button#support:hover {
     color: #fff;
     background-color: green;
-    margin-bottom: 40px;
 }
 #maui {
     margin: 70px 0;
