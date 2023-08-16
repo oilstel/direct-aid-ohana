@@ -1,3 +1,5 @@
+getRandomFamily();
+
 function getRandomFamily() {
     fetch('ohana_py/ohana.json')
     .then(response => response.json())
