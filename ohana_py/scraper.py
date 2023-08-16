@@ -17,21 +17,26 @@ for table in tables:
     table_data = []
     for row in rows:
         cells = row.find_all("td")
-        
-        # Define a mapping for the column names to our desired object names
-        col_mapping = {
-            0: "familyName",
-            1: "donationLink",
-            2: "Description"
-        }
-        
+
+        # If there's a link in the cell
+        if cells[1].find('a'):
+            link_tag = cells[1].find('a')
+            
+            # Remove the unwanted prefix from the href attribute
+            link_tag['href'] = link_tag['href'].replace('https://www.google.com/url?q=', '')
+
+            donation_link_str = str(link_tag)
+        else:
+            donation_link_str = ''
+
         values = {
             "family_name": cells[0].text,
-            "donation_link": ''.join(str(link) for link in cells[1].find_all('a')),
+            "donation_link": donation_link_str,
             "description": cells[2].text if len(cells) > 2 else None
         }
 
         table_data.append(values)
+
 
     master_data.append(table_data)
 
