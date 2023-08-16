@@ -84,6 +84,7 @@ main {
     max-width: max-content;
     text-decoration: underline;
     word-break: break-all;
+    word-wrap: break-word;
 }
 #donation-links a:hover {
     color: #000;
