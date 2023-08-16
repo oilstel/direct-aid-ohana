@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+from urllib.parse import urlparse, urlunparse
 import json
 import requests
 
@@ -7,39 +8,41 @@ html = requests.get(url).text
 soup = BeautifulSoup(html, "lxml")
 
 tables = soup.find_all("table")
-
 master_data = []
 
 for table in tables:
     rows = table.find_all("tr")[3:]  # Skip the first 3 rows
-
-    # Construct the list of dictionaries for this table
     table_data = []
+
     for row in rows:
         cells = row.find_all("td")
-
-        # If there's a link in the cell
-        if cells[1].find('a'):
-            link_tag = cells[1].find('a')
-            
+        
+        # Process all <a> tags in the cell
+        links = cells[1].find_all('a')
+        cleaned_urls = []
+        
+        for link_tag in links:
             # Remove the unwanted prefix from the href attribute
-            link_tag['href'] = link_tag['href'].replace('https://www.google.com/url?q=', '')
+            cleaned_href = link_tag['href'].replace('https://www.google.com/url?q=', '')
 
-            donation_link_str = str(link_tag)
-        else:
-            donation_link_str = ''
+            # Split at the first '&' and take the first part
+            cleaned_href = cleaned_href.split('&')[0]
+
+            # Remove query string from the URL
+            parsed_url = urlparse(cleaned_href)
+            cleaned_url = urlunparse([parsed_url.scheme, parsed_url.netloc, parsed_url.path, '', '', ''])
+
+            cleaned_urls.append(cleaned_url)
 
         values = {
             "family_name": cells[0].text,
-            "donation_link": donation_link_str,
+            "donation_links": cleaned_urls,
             "description": cells[2].text if len(cells) > 2 else None
         }
 
         table_data.append(values)
-
-
     master_data.append(table_data)
 
-# Serialize to JSON and write to a file called db.json
+# Serialize to JSON and write to a file called ohana.json
 with open("ohana.json", "w", encoding="utf-8") as f:
     json.dump(master_data, f, ensure_ascii=False, indent=4)

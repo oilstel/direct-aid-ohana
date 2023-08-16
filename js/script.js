@@ -5,13 +5,17 @@ function getRandomFamily() {
     .then(response => response.json())
     .then(data => {
         const flattenedData = data.flat();
-
         const randomItem = flattenedData[Math.floor(Math.random() * flattenedData.length)];
 
         console.log(flattenedData);
 
         document.getElementById('family-name').textContent = randomItem.family_name;
-        document.getElementById('donation-link').innerHTML = randomItem.donation_link;
+
+        // Convert the donation_link array back to <a> tags
+        const donationLinksHTML = randomItem.donation_links.map(url => `<a href="${url}" target="_blank">${url}</a>`).join('');
+        console.log(donationLinksHTML);
+        document.getElementById('donation-links').innerHTML = donationLinksHTML;
+
         document.getElementById('description').textContent = randomItem.description;
     })
     .catch(error => {
