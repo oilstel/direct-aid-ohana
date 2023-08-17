@@ -1,7 +1,7 @@
 # 🌺 mauiohana.support
 
-🔗 Get paired with a family to directly aid: mauiohana.support
-📄 Visit the master spreadsheet created by [@kennareed](https://www.instagram.com/kennareed/) [@ssamakaio](https://www.instagram.com/ssamakaio/) [@gwubby](https://www.instagram.com/gwubby/): [link](https://docs.google.com/spreadsheets/d/1lExatubPl6zvsDcy4qUd3Sv1PvvKrzMhUyOzaKuId0o/htmlview
+- 🔗 Get paired with a family to directly aid: mauiohana.support
+- 📄 Visit the master spreadsheet created by [@kennareed](https://www.instagram.com/kennareed/) [@ssamakaio](https://www.instagram.com/ssamakaio/) [@gwubby](https://www.instagram.com/gwubby/): [link](https://docs.google.com/spreadsheets/d/1lExatubPl6zvsDcy4qUd3Sv1PvvKrzMhUyOzaKuId0o/htmlview
 
 A website tool to directly Aid ʻOhana Displaced by Maui Fires. This website randomly pairs you with a family to directly support from [this list](https://docs.google.com/spreadsheets/d/1lExatubPl6zvsDcy4qUd3Sv1PvvKrzMhUyOzaKuId0o/htmlview).
 
