@@ -7,11 +7,11 @@ Please repost [mauiohana.support](http://mauiohana.support). If you want to give
 
 
 ## What is this tool?
-This is a website tool to directly Aid ʻOhana displaced by Maui fires. This website randomly pairs you with a family to directly support from [this list](https://docs.google.com/spreadsheets/d/1lExatubPl6zvsDcy4qUd3Sv1PvvKrzMhUyOzaKuId0o/htmlview).
+This is a website tool to directly aid ʻOhana displaced by Maui fires. This website randomly pairs you with a family to directly support from [this list](https://docs.google.com/spreadsheets/d/1lExatubPl6zvsDcy4qUd3Sv1PvvKrzMhUyOzaKuId0o/htmlview).
 
 
 ## Technical info
-The information is currently pulled from the Google sheet manually using a python script `/ohana_py/scraper.py`. The python script creates a local API at `/ohana_py/ohana.json`. This is due to Google's API restrictions and also keeps the site fast.
+The data is currently pulled from the Google sheet manually using a python script `/ohana_py/scraper.py`. The python script creates a local API at `/ohana_py/ohana.json`. This is due to Google's API restrictions and also keeps the site fast.
 
 Feel free to add issues or pull requests to this repo.
 
@@ -23,9 +23,9 @@ This tool was only possible with the incredible work [@kennareed](https://www.in
 ---
 
 ## Todos
-- [ ] Move to domain name (mauiohana.support)
-- [ ] Repost to sites that might pick this up
-- [ ] Fix mobile CSS
+- [X] Move to domain name (mauiohana.support)
+- [ ] Post to sites that might pick this up
+- [X] Fix mobile CSS
 - [ ] Dark mode?
 - [ ] Better donation URL parsing
 - [ ] GoFundMe API to pull latest funding info
