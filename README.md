@@ -23,9 +23,9 @@ This tool was only possible with the incredible work [@kennareed](https://www.in
 ---
 
 ## Todos
-- [ ] Move to domain name (mauiohana.support)
-- [ ] Repost to sites that might pick this up
-- [ ] Fix mobile CSS
+- [X] Move to domain name (mauiohana.support)
+- [ ] Post to sites that might pick this up
+- [X] Fix mobile CSS
 - [ ] Dark mode?
 - [ ] Better donation URL parsing
 - [ ] GoFundMe API to pull latest funding info
