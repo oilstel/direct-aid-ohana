@@ -11,7 +11,7 @@ This is a website tool to directly aid ʻOhana displaced by Maui fires. This web
 
 
 ## Technical info
-The information is currently pulled from the Google sheet manually using a python script `/ohana_py/scraper.py`. The python script creates a local API at `/ohana_py/ohana.json`. This is due to Google's API restrictions and also keeps the site fast.
+The data is currently pulled from the Google sheet manually using a python script `/ohana_py/scraper.py`. The python script creates a local API at `/ohana_py/ohana.json`. This is due to Google's API restrictions and also keeps the site fast.
 
 Feel free to add issues or pull requests to this repo.
 
