@@ -2,20 +2,21 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #000;
-    height: 100%;
     background: #fff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; 
     -webkit-text-size-adjust: none;
 }
 #intro {
+    display: flex;
+    flex-flow: row wrap;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    margin: 10px;
     text-align: left;
-    max-width: 600px;
+    background-color: #f5f5dc;
+    padding: 10px;
 }
 #intro h3 {
     font-weight: normal;
@@ -27,11 +28,24 @@ body, html {
     font-size: 14px;
     line-height: 16px;
     margin-top: 0;
+    margin-bottom: 0;
     color: #505050;
 }
 #intro p a {
     color: #505050;
 }
+#to-directory {
+    top: 10px;
+    right: 10px;
+    background-color: #E8E7FA;
+    padding: 7px;
+    margin-left: auto;
+    height: max-content;
+    border: 1px solid #000;
+    text-decoration: none;
+}
+
+
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
@@ -53,40 +67,45 @@ main {
 }
 #family-name {
     font-family: Arial, Helvetica, sans-serif;
+    padding: 0 15px;
 }
 #description {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: left;
     font-size: 24px;
     line-height: 32px;
+    padding: 0 15px;
 }
-#to-directory {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-#donation-links {
-    margin: 0 auto;
-    text-decoration: none;
+.donation-links {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-decoration: none;
     gap: 10px;
     margin-top: 40px;
+    width: 100dvw;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
 }
-#donation-links a {
+.donation-links a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     padding: 10px 15px;
     border-radius: 8px;
     border: 1px solid #b4b4b4;
     text-decoration: none;
-    max-width: max-content;
     text-decoration: underline;
     word-break: break-all;
     word-wrap: break-word;
+    display: inline-block;
+    max-width: fit-content;
+    background-color: #E8E7FA;
 }
-#donation-links a:hover {
+.donation-links a:hover {
     color: #000;
     background-color: yellow;
     border-color: #000;
@@ -94,7 +113,7 @@ main {
 a {
     color: #000;
 }
-#donation-link {
+#donation-links-top {
     margin-top: 30px;
 }
 button#support {
@@ -113,6 +132,7 @@ button#support {
     cursor: pointer;
     background-color: #ededed;
     margin-bottom: 100px;
+    margin-top: 30px;
 }
 button#support:hover {
     color: #fff;
@@ -123,5 +143,18 @@ button#support:hover {
 }
 
 @media (max-width: 700px) {
-
+    main {
+        margin-top: 0;
+    }
+    #description {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .donation-links a {
+        font-size: 18px;
+    }
+    #to-directory {
+        margin-left: initial;
+        margin-top: 10px;
+    }
 }

@@ -2,46 +2,48 @@
 <html>
     <head>
       <meta charset="utf-8">
-      <title>Directly Aid ʻOhana Displaced by Maui Fires</title>
-      <meta name="description" content="The current time in Hawaii.">
+      <title>Get paired with a Maui ʻOhana displaced by Maui fires to directly aid</title>
+      <meta name="description" content="This website randomly pairs you with a family to directly support from @kennareed @ssamakaio @gwubby's Google sheet.">
       <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-      <link href="css/main.css" rel="stylesheet">
-      <link rel="shortcut icon" type="image/png" href="https://www.nps.gov/webcams-hale/HaleSummitCamCrater.jpg">
+      <link href="css/style.css" rel="stylesheet">
+      <link rel="shortcut icon" type="image/png" href="https://mauiohana.support/images/favicon.svg">
+
+      <!-- Twitter -->
       <meta name="twitter:card" content="summary_large_image">
-      <meta name="twitter:site" content="@oilstel">
-      <meta name="twitter:title" content="Hawaii Standard Time">
-      <meta name="twitter:description" content="The current time in Hawaii.">
-      <meta name="twitter:image" content="https://www.nps.gov/webcams-hale/HaleSummitCamCrater.jpg"/>
-      <meta property="og:image" content="https://www.nps.gov/webcams-hale/HaleSummitCamCrater.jpg"/>
+      <meta name="twitter:title" content="Get paired with a Maui ʻOhana displaced by Maui fires to directly aid">
+      <meta name="twitter:description" content="This website randomly pairs you with a family to directly support from @kennareed @ssamakaio @gwubby's Google sheet.">
+      <meta name="twitter:image" content="https://mauiohana.support/images/social-image.png"/>
+
+      <!-- Facebook -->
+      <meta property="og:image" content="https://mauiohana.support/images/social-image.png"/>
       <meta property="og:type" content="website"/>
-      <meta property="og:title" content="Hawaii Standard Time"/>
-      <meta property="og:description" content="The current time in Hawaii."/>
+      <meta property="og:title" content="Get paired with a Maui ʻOhana displaced by Maui fires to directly aid"/>
+      <meta property="og:description" content="This website randomly pairs you with a family to directly support from @kennareed @ssamakaio @gwubby's Google sheet."/>
       <meta property="og:locale" content="en_US"/>
-      <meta property="og:url" content="https://hawaiistandardtime.com"/>
+      <meta property="og:url" content="https://mauiohana.support"/>
     </head>
       
     <body>
         <div id="intro">
-            <h3>Directly Aid ʻOhana Displaced by Maui Fires</h3>
-            <p>This website randomly pairs you with a family to directly support from <a href="https://docs.google.com/spreadsheets/d/1lExatubPl6zvsDcy4qUd3Sv1PvvKrzMhUyOzaKuId0o/htmlview">this list</a>. <br>Please note: The information is updated once daily due to Google API limitations.</p>
+            <div id="left">
+                <h3>Directly Aid ʻOhana Displaced by Maui Fires</h3>
+                <p>This website randomly pairs you with a family to directly support from <a href="https://docs.google.com/spreadsheets/d/1lExatubPl6zvsDcy4qUd3Sv1PvvKrzMhUyOzaKuId0o/htmlview">this list</a>. <br>Please note: The information is updated once daily due to Google API limitations.</p>
+            </div>
+
+            <a href="https://docs.google.com/spreadsheets/d/1lExatubPl6zvsDcy4qUd3Sv1PvvKrzMhUyOzaKuId0o/htmlview" id="to-directory">View the entire list of families &rarr;</a>
         </div>
 
         <main>
-
-            <!-- <div id="to-directory">
-                <img src="images/maui.svg" alt="Maui" style="max-width: 40px;">
-                <a href="https://docs.google.com/spreadsheets/d/1lExatubPl6zvsDcy4qUd3Sv1PvvKrzMhUyOzaKuId0o/htmlview">View the entire list of families</a>
-            </div> -->
     
             <div id="ohana">
                 <h3 id="family-name"></h3>
                 <div id="description"></div>
-                <div id="donation-links"></div>
+                <div class="donation-links" id="donation-links-bottom"></div>
             </div>
-
-            <img src="images/maui.svg" id="maui" alt="Maui" style="max-width: 80px;">
     
             <button id="support">Help more Maui families</button>
+
+            <img src="images/maui.svg" id="maui" alt="Maui" style="max-width: 80px;">
         </main>
       
         <script src="js/script.js"></script>

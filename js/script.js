@@ -14,7 +14,8 @@ function getRandomFamily() {
         // Convert the donation_link array back to <a> tags
         const donationLinksHTML = randomItem.donation_links.map(url => `<a href="${url}" target="_blank">${url}</a>`).join('');
         console.log(donationLinksHTML);
-        document.getElementById('donation-links').innerHTML = donationLinksHTML;
+        // document.getElementById('donation-links-top').innerHTML = donationLinksHTML;
+        document.getElementById('donation-links-bottom').innerHTML = donationLinksHTML;
 
         document.getElementById('description').textContent = randomItem.description;
     })
@@ -23,4 +24,7 @@ function getRandomFamily() {
     });
 }
 
-document.getElementById('support').addEventListener('click', getRandomFamily);
+document.getElementById('support').addEventListener('click', function() {
+    getRandomFamily();
+    window.scrollTo(0, 0);
+});
