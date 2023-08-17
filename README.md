@@ -6,9 +6,9 @@ Please note: The information is currently pulled from the Google sheet manually 
 
 Feel free to add issues or pull requests to this repo.
 
-This tool was only possible with the incredible work [@gwubby](https://www.instagram.com/kennareed/) [@gwubby](https://www.instagram.com/ssamakaio/) [@gwubby](https://www.instagram.com/gwubby/) has been doing.
+This tool was only possible with the incredible work [@kennareed](https://www.instagram.com/kennareed/) [@ssamakaio](https://www.instagram.com/ssamakaio/) [@gwubby](https://www.instagram.com/gwubby/) have been doing.
 
-Feel free to repost [mauiohana.support](mauiohana.support) everywhere. Please credit the original creators of the spreadsheet, not me. Let's get these families direct support. Mahalo nui loa.
+Please repost [mauiohana.support](mauiohana.support) everywhere. If you want to give credit, please @ the original creators of the spreadsheet, not me. Let's get these families direct support. Mahalo nui loa.
 
 Todos:
 [ ] Move to domain name (mauiohana.support)
