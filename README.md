@@ -7,7 +7,7 @@ Please repost [mauiohana.support](http://mauiohana.support). If you want to give
 
 
 ## What is this tool?
-This is a website tool to directly Aid ʻOhana Displaced by Maui Fires. This website randomly pairs you with a family to directly support from [this list](https://docs.google.com/spreadsheets/d/1lExatubPl6zvsDcy4qUd3Sv1PvvKrzMhUyOzaKuId0o/htmlview).
+This is a website tool to directly Aid ʻOhana displaced by Maui fires. This website randomly pairs you with a family to directly support from [this list](https://docs.google.com/spreadsheets/d/1lExatubPl6zvsDcy4qUd3Sv1PvvKrzMhUyOzaKuId0o/htmlview).
 
 
 ## Technical info
