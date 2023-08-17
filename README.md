@@ -11,11 +11,11 @@ This tool was only possible with the incredible work [@kennareed](https://www.in
 Please repost [mauiohana.support](mauiohana.support) everywhere. If you want to give credit, please @ the original creators of the spreadsheet, not me. Let's get these families direct support. Mahalo nui loa.
 
 Todos:
-[ ] Move to domain name (mauiohana.support)
-[ ] Repost to sites that might pick this up
-[ ] Fix mobile CSS
-[ ] Dark mode?
-[ ] Better donation URL parsing
-[ ] GoFundMe API to pull latest funding info
-[ ] Sort by most in need?
-[ ] Make random button more noticeable
+- [ ] Move to domain name (mauiohana.support)
+- [ ] Repost to sites that might pick this up
+- [ ] Fix mobile CSS
+- [ ] Dark mode?
+- [ ] Better donation URL parsing
+- [ ] GoFundMe API to pull latest funding info
+- [ ] Sort by most in need?
+- [ ] Make random button more noticeable
