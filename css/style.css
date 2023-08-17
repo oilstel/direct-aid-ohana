@@ -30,6 +30,7 @@ body, html {
     margin-top: 0;
     margin-bottom: 0;
     color: #505050;
+    max-width: 620px;
 }
 #intro p a {
     color: #505050;
